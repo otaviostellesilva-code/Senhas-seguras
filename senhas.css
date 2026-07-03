@@ -1,0 +1,31 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #0f172a; /* Garante o fundo Slate-900 no CodePen */
+}
+
+.mono {
+    font-family: 'Space Mono', monospace;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.strength-bar-fill {
+    transition: width 0.35s ease, background-color 0.35s ease;
+}
+
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.75) 60%, rgba(30,27,75,0.7) 100%);
+}
