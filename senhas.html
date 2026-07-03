@@ -1,0 +1,145 @@
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<header data-template-id="hero-section" class="canva-header relative w-full overflow-hidden border-b border-slate-700">
+  <img data-template-id="hero-image" src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=1200" alt="Criptografia" loading="lazy" class="canva-image absolute inset-0 w-full h-full object-cover opacity-20">
+  <div class="hero-overlay relative w-full px-6 py-16 sm:py-20">
+    <div class="max-w-5xl mx-auto text-center">
+      <span data-template-id="hero-badge" class="canva-tag inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase border border-cyan-400/40 mb-5">
+        <i data-lucide="shield-check" style="width:14px;height:14px;"></i>
+        <span data-template-id="hero-badge-text">Segurança Analítica</span>
+      </span>
+      <h1 data-template-id="page-title" class="canva-text text-3xl sm:text-5xl font-bold leading-tight mb-4 text-cyan-400">CriptoAnálise</h1>
+      <p data-template-id="hero-subtitle" class="canva-text max-w-2xl mx-auto text-slate-300 text-lg">A Matemática das Senhas e a Ciência da Entropia.</p>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-6 mt-10 space-y-8">
+  <section data-template-id="intro-card" class="canva-card rounded-2xl border border-slate-700 p-7 sm:p-9 shadow-xl bg-slate-900/50">
+    <h2 data-template-id="intro-heading" class="canva-text text-xl font-semibold mb-5 pl-3 border-l-4 border-cyan-400 text-slate-100">Por que o comprimento importa?</h2>
+    <p data-template-id="intro-body-1" class="canva-text mb-4 leading-relaxed text-slate-300">A força de uma senha não depende apenas do uso de caracteres especiais, mas sim do tamanho total do espaço de busca exponencial gerado por ela.</p>
+    <p data-template-id="intro-body-2" class="canva-text mb-6 leading-relaxed text-slate-300">Cada caractere adicionado multiplica as combinações possíveis, tornando o ataque de força bruta matematicamente inviável.</p>
+    
+    <div class="flex items-center gap-4 rounded-xl border border-slate-700 bg-slate-900/80 p-5 mb-2">
+      <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-cyan-500/15 text-cyan-300">
+        <i data-lucide="alert-triangle" style="width:26px;height:26px;"></i>
+      </div>
+      <div>
+        <p data-template-id="stat-value" class="canva-text mono font-bold leading-none mb-1 text-cyan-400 text-xl">100 Bilhões</p>
+        <p data-template-id="stat-label" class="canva-text text-sm text-slate-400">Tentativas por segundo estimadas para supercomputadores atuais.</p>
+      </div>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-3 mt-6">
+      <div data-template-id="rule-1" class="canva-panel rounded-xl border border-slate-700 bg-slate-900/40 p-5">
+        <span data-template-id="rule-1-num" class="canva-text mono font-bold text-cyan-300 text-sm">Regra 01</span>
+        <h3 data-template-id="rule-1-title" class="canva-text font-semibold mt-1 mb-2 text-slate-200">Evite Padrões</h3>
+        <p data-template-id="rule-1-desc" class="canva-text text-sm leading-relaxed text-slate-400">Sequências óbvias como "123" ou "abc" zeram a eficácia da proteção.</p>
+      </div>
+      <div data-template-id="rule-2" class="canva-panel rounded-xl border border-slate-700 bg-slate-900/40 p-5">
+        <span data-template-id="rule-2-num" class="canva-text mono font-bold text-cyan-300 text-sm">Regra 02</span>
+        <h3 data-template-id="rule-2-title" class="canva-text font-semibold mt-1 mb-2 text-slate-200">Aumente o Espaço</h3>
+        <p data-template-id="rule-2-desc" class="canva-text text-sm leading-relaxed text-slate-400">Combine maiúsculas, minúsculas, algarismos e pontuações especiais.</p>
+      </div>
+      <div data-template-id="rule-3" class="canva-panel rounded-xl border border-slate-700 bg-slate-900/40 p-5">
+        <span data-template-id="rule-3-num" class="canva-text mono font-bold text-cyan-300 text-sm">Regra 03</span>
+        <h3 data-template-id="rule-3-title" class="canva-text font-semibold mt-1 mb-2 text-slate-200">Use Geradores</h3>
+        <p data-template-id="rule-3-desc" class="canva-text text-sm leading-relaxed text-slate-400">A aleatoriedade de máquina cria entropias muito maiores que o cérebro humano.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-template-id="analyzer-card" class="canva-card rounded-2xl border border-slate-700 p-7 sm:p-9 shadow-xl bg-slate-900/50">
+    <h2 data-template-id="analyzer-heading" class="canva-text text-xl font-semibold mb-3 pl-3 border-l-4 border-cyan-400 text-slate-100">Analisador de Entropia em Tempo Real</h2>
+    <p data-template-id="analyzer-desc" class="canva-text mb-6 leading-relaxed text-slate-400">Insira uma senha abaixo para calcular sua resistência matemática baseada em bits de entropia.</p>
+    <label data-template-id="password-label" for="passwordInput" class="canva-text block font-medium mb-2 text-slate-300">Digite sua senha teste:</label>
+    
+    <div class="relative">
+      <input id="passwordInput" type="text" autocomplete="off" spellcheck="false" data-template-id="password-input" class="canva-input mono w-full rounded-lg border-2 border-slate-600 bg-slate-950 text-slate-100 px-4 py-3 pr-12 text-lg focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition" placeholder="SuaSenhaAqui123!">
+      <button id="toggleVisibility" type="button" aria-label="Mostrar ou ocultar senha" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-cyan-300 focus:outline-none focus:text-cyan-300">
+        <i data-lucide="eye" id="eyeIcon" style="width:20px;height:20px;"></i>
+      </button>
+    </div>
+
+    <div class="mt-5">
+      <div class="flex items-center justify-between mb-2">
+        <span data-template-id="strength-label" class="canva-text text-sm font-medium text-slate-300">Força Calculada:</span>
+        <span id="strengthValue" class="mono text-sm font-bold text-slate-400">—</span>
+      </div>
+      <div class="w-full h-2.5 rounded-full bg-slate-700 overflow-hidden">
+        <div id="strengthBar" class="strength-bar-fill h-full rounded-full bg-slate-600" style="width:0%"></div>
+      </div>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-7">
+      <div class="rounded-xl border border-slate-700 bg-slate-900/40 p-4">
+        <div class="flex items-center gap-2 text-cyan-300 mb-2">
+          <i data-lucide="type" style="width:16px;height:16px;"></i>
+          <span data-template-id="metric-charset-label" class="canva-text text-xs font-semibold uppercase tracking-wide">Alfabeto</span>
+        </div>
+        <p id="metricCharset" class="mono text-xl font-bold text-slate-100">—</p>
+      </div>
+      <div class="rounded-xl border border-slate-700 bg-slate-900/40 p-4">
+        <div class="flex items-center gap-2 text-cyan-300 mb-2">
+          <i data-lucide="sigma" style="width:16px;height:16px;"></i>
+          <span data-template-id="metric-space-label" class="canva-text text-xs font-semibold uppercase tracking-wide">Combinações</span>
+        </div>
+        <p id="metricSpace" class="mono text-xl font-bold text-slate-100 break-all">—</p>
+      </div>
+      <div class="rounded-xl border border-slate-700 bg-slate-900/40 p-4">
+        <div class="flex items-center gap-2 text-cyan-300 mb-2">
+          <i data-lucide="zap" style="width:16px;height:16px;"></i>
+          <span data-template-id="metric-entropy-label" class="canva-text text-xs font-semibold uppercase tracking-wide">Entropia</span>
+        </div>
+        <p id="metricEntropy" class="mono text-xl font-bold text-slate-100">—</p>
+      </div>
+      <div class="rounded-xl border border-slate-700 bg-slate-900/40 p-4">
+        <div class="flex items-center gap-2 text-cyan-300 mb-2">
+          <i data-lucide="clock" style="width:16px;height:16px;"></i>
+          <span data-template-id="metric-crack-label" class="canva-text text-xs font-semibold uppercase tracking-wide">Tempo de Quebra</span>
+        </div>
+        <p id="metricCrack" class="mono text-xl font-bold text-slate-100 break-words">—</p>
+      </div>
+    </div>
+
+    <div class="mt-7">
+      <h3 data-template-id="patterns-heading" class="canva-text font-semibold mb-3 text-slate-200">Alertas de Padrões Encontrados:</h3>
+      <ul id="patternList" class="space-y-2"></ul>
+      <p id="noIssues" class="mono text-sm text-slate-500">— digite uma senha para iniciar a análise —</p>
+    </div>
+  </section>
+
+  <section data-template-id="generator-card" class="canva-card rounded-2xl border border-slate-700 p-7 sm:p-9 shadow-xl bg-slate-900/50">
+    <h2 data-template-id="generator-heading" class="canva-text text-xl font-semibold mb-3 pl-3 border-l-4 border-cyan-400 text-slate-100">Gerador Criptográfico de Alta Segurança</h2>
+    <p data-template-id="generator-desc" class="canva-text mb-5 leading-relaxed text-slate-400">Crie senhas totalmente aleatórias de 20 caracteres geradas direto no motor criptográfico do seu navegador.</p>
+    
+    <div class="flex flex-col sm:flex-row gap-3">
+      <div class="flex-1 rounded-lg border-2 border-slate-600 bg-slate-950 px-4 py-3 min-h-[52px] flex items-center">
+        <span id="generatedOutput" class="mono text-lg text-cyan-200 break-all select-all">••••••••••••••••••••</span>
+      </div>
+      <button id="generateBtn" data-template-id="generate-button" type="button" class="canva-button inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-semibold transition bg-cyan-500 text-slate-950 hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/40">
+        <i data-lucide="dice-5" style="width:18px;height:18px;"></i>
+        <span data-template-id="generate-button-text">Gerar Senha</span>
+      </button>
+      <button id="copyBtn" data-template-id="copy-button" type="button" class="canva-button inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-semibold border border-slate-600 transition text-slate-200 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-400/40">
+        <i data-lucide="copy" style="width:18px;height:18px;"></i>
+        <span data-template-id="copy-button-text">Copiar</span>
+      </button>
+    </div>
+    <p id="copyFeedback" data-template-id="copy-feedback" class="canva-text text-sm mt-3 hidden" aria-live="polite"></p>
+  </section>
+</main>
+
+<footer class="max-w-5xl mx-auto px-6 mt-10 text-center text-slate-500">
+  <p data-template-id="footer-text" class="canva-text text-sm">Desenvolvido sob preceitos de Criptoanálise Linear Estendida — 2026</p>
+</footer>
+
+<template id="pattern-template">
+  <li class="pattern-item flex items-start gap-2 rounded-lg border border-red-500/30 bg-red-500/10 px-3 py-2 fade-in">
+    <i data-lucide="alert-circle" class="text-red-300 flex-shrink-0 mt-0.5" style="width:16px;height:16px;"></i>
+    <span class="pattern-text text-sm text-red-200"></span>
+  </li>
+</template>
